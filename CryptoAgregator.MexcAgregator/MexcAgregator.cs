@@ -44,7 +44,7 @@ namespace CryptoAgregator.MexcAgregator
 
         public async override Task<Result<IEnumerable<Symbol>>> GetSymbolsAsync()
         {
-            _logger.LogInformation("Getting a list of symbols");
+            _logger.LogInformation("Getting a list of symbols. Agregator: {Agregator}", nameof(MexcAgregator));
 
             try
             {

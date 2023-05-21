@@ -45,7 +45,7 @@ namespace CryptoAgregator.BybitAgregator
 
         public override async Task<Result<IEnumerable<Symbol>>> GetSymbolsAsync()
         {
-            _logger.LogInformation("Getting a list of symbols");
+            _logger.LogInformation("Getting a list of symbols. Agregator: {Agregator}", nameof(BybitAgregator));
 
             try
             {

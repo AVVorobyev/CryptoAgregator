@@ -48,7 +48,7 @@ namespace CryptoAgregator.BinanceAgregator
 
         public override async Task<Result<IEnumerable<Symbol>>> GetSymbolsAsync()
         {
-            _logger.LogInformation("Getting a list of symbols");
+            _logger.LogInformation("Getting a list of symbols. Agregator: {Agregator}", nameof(BinanceAgregator));
 
             try
             {
