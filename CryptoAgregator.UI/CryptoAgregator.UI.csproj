@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Serilog" Version="2.12.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="7.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CryptoAgregator.BinanceAgregator\CryptoAgregator.BinanceAgregator.csproj" />
+    <ProjectReference Include="..\CryptoAgregator.BybitAgregator\CryptoAgregator.BybitAgregator.csproj" />
+    <ProjectReference Include="..\CryptoAgregator.KucionAgregator\CryptoAgregator.KucionAgregator.csproj" />
+    <ProjectReference Include="..\CryptoAgregator.MexcAgregator\CryptoAgregator.MexcAgregator.csproj" />
+  </ItemGroup>
+
+</Project>
